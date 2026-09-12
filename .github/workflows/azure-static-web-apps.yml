@@ -36,6 +36,12 @@ jobs:
           app_location: "momissionmusic/" # Var din kod ligger i arkivet. "/" betyder i roten.
           api_location: ""  # Lämna tom om du inte har ett API-projekt
           output_location: "" # Lämna tom för helt vanliga statiska HTML/CSS-filer
+        env:
+          IS_STATIC_EXPORT: true
+          AZURE_FUNCTIONS_ENVIRONMENT: Production
+          WEBSITE_NODE_DEFAULT_VERSION: "~20"
+          NEXT_TELEMETRY_DISABLED: 1
+          NEXT_BUILD_CACHE: "true"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
