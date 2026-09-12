@@ -33,7 +33,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "momissionmusic/" # Var din kod ligger i arkivet. "/" betyder i roten.
+          app_location: "/" # Var din kod ligger i arkivet. "/" betyder i roten.
           api_location: ""  # Lämna tom om du inte har ett API-projekt
           output_location: "" # Lämna tom för helt vanliga statiska HTML/CSS-filer
         env:
