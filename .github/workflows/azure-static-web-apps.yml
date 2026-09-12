@@ -29,6 +29,7 @@ jobs:
           app_location: "/"         # Var dina HTML-filer ligger
           api_location: ""          # Lämna tom
           output_location: ""       # Lämna tom för rena HTML/CSS-filer
+          skip_app_build: true
           is_static_export: true    # Berättar för Azure att det är en ren statisk sida
 
   close_pull_request_job:
